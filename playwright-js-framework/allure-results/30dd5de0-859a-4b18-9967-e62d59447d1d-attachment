@@ -1,0 +1,338 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Automation Practice Site Tests >> 11. Open link in new tab
+- Location: E:\playwright-js-allure-framework\playwright-js-framework\tests\ui\automationPractice.spec.js:78:3
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "rahulshettyacademy.com"
+Received string:    "https://www.qaclickacademy.com/"
+    at E:\playwright-js-allure-framework\playwright-js-framework\tests\ui\automationPractice.spec.js:84:27
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link:
+    - img
+  - link "Free Access to InterviewQues/ResumeAssistance/Material"
+  - link "Home":
+    - button "Home"
+  - button "Practice"
+  - button "Login"
+  - button "Signup"
+- heading "Practice Page" [level=1]
+- group "Radio Button Example":
+  - text: Radio Button Example
+  - radio
+  - text: Radio1
+  - radio
+  - text: Radio2
+  - radio
+  - text: Radio3
+- group "Suggession Class Example":
+  - text: Suggession Class Example
+  - textbox "Type to Select Countries"
+- group "Dropdown Example":
+  - text: Dropdown Example
+  - combobox:
+    - option "Select" [selected]
+    - option "Option1"
+    - option "Option2"
+    - option "Option3"
+- group "Checkbox Example":
+  - text: Checkbox Example
+  - checkbox
+  - text: Option1
+  - checkbox
+  - text: Option2
+  - checkbox
+  - text: Option3
+- group "Switch Window Example":
+  - text: Switch Window Example
+  - button "Open Window"
+- group "Switch Tab Example":
+  - text: Switch Tab Example
+  - link "Open Tab"
+- group "Switch To Alert Example":
+  - text: Switch To Alert Example
+  - textbox "Enter Your Name"
+  - button "Alert"
+  - button "Confirm"
+- group "Web Table Example":
+  - text: Web Table Example
+  - table:
+    - rowgroup:
+      - row "Instructor Course Price":
+        - cell "Instructor"
+        - cell "Course"
+        - cell "Price"
+      - row "Rahul Shetty Selenium Webdriver with Java Basics + Advanced + Interview Guide 30":
+        - cell "Rahul Shetty"
+        - cell "Selenium Webdriver with Java Basics + Advanced + Interview Guide"
+        - cell "30"
+      - row "Rahul Shetty Learn SQL in Practical + Database Testing from Scratch 25":
+        - cell "Rahul Shetty"
+        - cell "Learn SQL in Practical + Database Testing from Scratch"
+        - cell "25"
+      - row "Rahul Shetty Appium (Selenium) - Mobile Automation Testing from Scratch 30":
+        - cell "Rahul Shetty"
+        - cell "Appium (Selenium) - Mobile Automation Testing from Scratch"
+        - cell "30"
+      - row "Rahul Shetty WebSecurity Testing for Beginners-QA knowledge to next level 20":
+        - cell "Rahul Shetty"
+        - cell "WebSecurity Testing for Beginners-QA knowledge to next level"
+        - cell "20"
+      - row "Rahul Shetty Learn JMETER from Scratch - (Performance + Load) Testing Tool 25":
+        - cell "Rahul Shetty"
+        - cell "Learn JMETER from Scratch - (Performance + Load) Testing Tool"
+        - cell "25"
+      - row "Rahul Shetty WebServices / REST API Testing with SoapUI 35":
+        - cell "Rahul Shetty"
+        - cell "WebServices / REST API Testing with SoapUI"
+        - cell "35"
+      - row "Rahul Shetty QA Expert Course :Software Testing + Bugzilla + SQL + Agile 25":
+        - cell "Rahul Shetty"
+        - cell "QA Expert Course :Software Testing + Bugzilla + SQL + Agile"
+        - cell "25"
+      - row "Rahul Shetty Master Selenium Automation in simple Python Language 25":
+        - cell "Rahul Shetty"
+        - cell "Master Selenium Automation in simple Python Language"
+        - cell "25"
+      - row "Rahul Shetty Advanced Selenium Framework Pageobject, TestNG, Maven, Jenkins,C 20":
+        - cell "Rahul Shetty"
+        - cell "Advanced Selenium Framework Pageobject, TestNG, Maven, Jenkins,C"
+        - cell "20"
+      - row "Rahul Shetty Write effective QA Resume that will turn to interview call 0":
+        - cell "Rahul Shetty"
+        - cell "Write effective QA Resume that will turn to interview call"
+        - cell "0"
+- group "Element Displayed Example":
+  - text: Element Displayed Example
+  - button "Hide"
+  - button "Show"
+  - textbox "Hide/Show Example"
+- group "Web Table Fixed header":
+  - text: Web Table Fixed header
+  - table:
+    - rowgroup:
+      - row "Name Position City Amount":
+        - cell "Name"
+        - cell "Position"
+        - cell "City"
+        - cell "Amount"
+    - rowgroup:
+      - row "Alex Engineer Chennai 28":
+        - cell "Alex"
+        - cell "Engineer"
+        - cell "Chennai"
+        - cell "28"
+      - row "Ben Mechanic Bengaluru 23":
+        - cell "Ben"
+        - cell "Mechanic"
+        - cell "Bengaluru"
+        - cell "23"
+      - row "Dwayne Manager Kolkata 48":
+        - cell "Dwayne"
+        - cell "Manager"
+        - cell "Kolkata"
+        - cell "48"
+      - row "Ivory Receptionist Chennai 18":
+        - cell "Ivory"
+        - cell "Receptionist"
+        - cell "Chennai"
+        - cell "18"
+      - row "Jack Engineer Pune 32":
+        - cell "Jack"
+        - cell "Engineer"
+        - cell "Pune"
+        - cell "32"
+      - row "Joe Postman Chennai 46":
+        - cell "Joe"
+        - cell "Postman"
+        - cell "Chennai"
+        - cell "46"
+      - row "Raymond Businessman Mumbai 37":
+        - cell "Raymond"
+        - cell "Businessman"
+        - cell "Mumbai"
+        - cell "37"
+      - row "Ronaldo Sportsman Chennai 31":
+        - cell "Ronaldo"
+        - cell "Sportsman"
+        - cell "Chennai"
+        - cell "31"
+      - row "Smith Cricketer Delhi 33":
+        - cell "Smith"
+        - cell "Cricketer"
+        - cell "Delhi"
+        - cell "33"
+  - text: "Total Amount Collected: 296"
+- group "Mouse Hover Example":
+  - text: Mouse Hover Example
+  - button "Mouse Hover"
+- group "iFrame Example"
+- table:
+  - rowgroup:
+    - row "Discount Coupons REST API SoapUI Appium JMeter Latest News Broken Link Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing. Contact info Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing. Social Media Facebook Twitter Google+ Youtube":
+      - cell "Discount Coupons REST API SoapUI Appium JMeter":
+        - list:
+          - listitem:
+            - heading "Discount Coupons" [level=3]:
+              - link "Discount Coupons"
+          - listitem:
+            - link "REST API"
+          - listitem:
+            - link "SoapUI"
+          - listitem:
+            - link "Appium"
+          - listitem:
+            - link "JMeter"
+      - cell "Latest News Broken Link Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing.":
+        - list:
+          - listitem:
+            - heading "Latest News" [level=3]:
+              - link "Latest News"
+          - listitem:
+            - link "Broken Link"
+          - listitem:
+            - link "Dummy Content for Testing."
+          - listitem:
+            - link "Dummy Content for Testing."
+          - listitem:
+            - link "Dummy Content for Testing."
+      - cell "Contact info Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing.":
+        - list:
+          - listitem:
+            - heading "Contact info" [level=3]:
+              - link "Contact info"
+          - listitem:
+            - link "Dummy Content for Testing."
+          - listitem:
+            - link "Dummy Content for Testing."
+          - listitem:
+            - link "Dummy Content for Testing."
+          - listitem:
+            - link "Dummy Content for Testing."
+      - cell "Social Media Facebook Twitter Google+ Youtube":
+        - list:
+          - listitem:
+            - heading "Social Media" [level=3]:
+              - link "Social Media"
+          - listitem:
+            - link "Facebook"
+          - listitem:
+            - link "Twitter"
+          - listitem:
+            - link "Google+"
+          - listitem:
+            - link "Youtube"
+- text: © 2019 Powered by
+- strong:
+  - link "Medianh Consulting"
+- status
+```
+
+# Test source
+
+```ts
+   1 | // tests/ui/automationPractice.spec.js
+   2 | const { test, expect } = require('@playwright/test');
+   3 | const { HomePage } = require('../../pages/HomePage');
+   4 | const { AlertsPage } = require('../../pages/AlertsPage');
+   5 | const { TablePage } = require('../../pages/TablePage');
+   6 |
+   7 | test.describe('Automation Practice Site Tests', () => {
+   8 |   let homePage;
+   9 |   let alertsPage;
+  10 |   let tablePage;
+  11 |
+  12 |   test.beforeEach(async ({ page }) => {
+  13 |     homePage = new HomePage(page);
+  14 |     alertsPage = new AlertsPage(page);
+  15 |     tablePage = new TablePage(page);
+  16 |     await homePage.goto();
+  17 |   });
+  18 |
+  19 |   test('1. Fill suggestion input', async () => {
+  20 |     await homePage.fillSuggestionInput('India');
+  21 |     const inputValue = await homePage.page.inputValue('#autocomplete');
+  22 |     expect(inputValue).toBe('India');
+  23 |   });
+  24 |
+  25 |   test('2. Select radio button', async () => {
+  26 |     await homePage.selectRadioOption();
+  27 |     expect(await homePage.page.isChecked('input[value="radio2"]')).toBeTruthy();
+  28 |   });
+  29 |
+  30 |   test('3. Select option from static dropdown', async () => {
+  31 |     await homePage.selectDropdownOption('option2');
+  32 |     const dropdownValue = await homePage.page.$eval('#dropdown-class-example', el => el.value);
+  33 |     expect(dropdownValue).toBe('option2');
+  34 |   });
+  35 |
+  36 |   test('4. Check multiple checkboxes', async () => {
+  37 |     await homePage.checkCheckboxOption1();
+  38 |     await homePage.checkCheckboxOption3();
+  39 |     expect(await homePage.page.isChecked('input[value="option1"]')).toBeTruthy();
+  40 |   });
+  41 |
+  42 |   test('5. Handle alert and assert message', async () => {
+  43 |     await alertsPage.triggerAlert('John');
+  44 |     // Test confirms the dialog appears and is accepted
+  45 |   });
+  46 |
+  47 |   test('6. Confirm alert popup and dismiss it', async () => {
+  48 |     await alertsPage.triggerConfirm('Jane');
+  49 |     // Test confirms the dialog appears and is dismissed
+  50 |   });
+  51 |
+  52 |   test('7. Hide and show textbox', async () => {
+  53 |     await homePage.hideTextbox();
+  54 |     expect(await homePage.page.isVisible('#displayed-text')).toBeFalsy();
+  55 |     await homePage.showTextbox();
+  56 |     expect(await homePage.page.isVisible('#displayed-text')).toBeTruthy();
+  57 |   });
+  58 |
+  59 |   test('8. Mouse hover and click', async () => {
+  60 |     await homePage.hoverMouse();
+  61 |     await homePage.page.click('.mouse-hover-content a:text("Top")');
+  62 |     await expect(homePage.page).toHaveURL(/#top/);
+  63 |   });
+  64 |
+  65 |   test('9. Validate table row and column count', async () => {
+  66 |     const rowCount = await tablePage.getTableRowCount();
+  67 |     const colCount = await tablePage.getTableColumnCount();
+  68 |     expect(rowCount).toBeGreaterThan(1);
+  69 |     expect(colCount).toBeGreaterThan(1);
+  70 |   });
+  71 |
+  72 |   test('10. Validate course prices in web table', async () => {
+  73 |     const prices = await tablePage.getTablePrices();
+  74 |     expect(prices.length).toBeGreaterThan(0);
+  75 |     expect(prices).toContain(25); // known price in the table
+  76 |   });
+  77 |
+  78 |   test('11. Open link in new tab', async ({ context }) => {
+  79 |     const [newPage] = await Promise.all([
+  80 |       context.waitForEvent('page'),
+  81 |       homePage.openNewTab()
+  82 |     ]);
+  83 |     await newPage.waitForLoadState();
+> 84 |     expect(newPage.url()).toContain('rahulshettyacademy.com');
+     |                           ^ Error: expect(received).toContain(expected) // indexOf
+  85 |     await newPage.close();
+  86 |   });
+  87 | });
+  88 |
+```
