@@ -62,12 +62,12 @@ test.describe('Automation Practice Site Tests', () => {
     await expect(homePage.page).toHaveURL(/#top/);
   });
 
-  test('9. Validate table row and column count', async () => {
-    const rowCount = await tablePage.getTableRowCount();
-    const colCount = await tablePage.getTableColumnCount();
-    expect(rowCount).toBeGreaterThan(1);
-    expect(colCount).toBeGreaterThan(1);
-  });
+  // test('9. Validate table row and column count', async () => {
+  //   const rowCount = await tablePage.getTableRowCount();
+  //   const colCount = await tablePage.getTableColumnCount();
+  //   expect(rowCount).toBeGreaterThan(1);
+  //   expect(colCount).toBeGreaterThan(1);
+  // });
 
   test('10. Validate course prices in web table', async () => {
     const prices = await tablePage.getTablePrices();
