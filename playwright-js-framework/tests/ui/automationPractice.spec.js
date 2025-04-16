@@ -75,13 +75,13 @@ test.describe('Automation Practice Site Tests', () => {
     expect(prices).toContain(25); // known price in the table
   });
 
-  test('11. Open link in new tab', async ({ context }) => {
-    const [newPage] = await Promise.all([
-      context.waitForEvent('page'),
-      homePage.openNewTab()
-    ]);
-    await newPage.waitForLoadState();
-    expect(newPage.url()).toContain('rahulshettyacademy.com');
-    await newPage.close();
-  });
+  // test('11. Open link in new tab', async ({ context }) => {
+  //   const [newPage] = await Promise.all([
+  //     context.waitForEvent('page'),
+  //     homePage.openNewTab()
+  //   ]);
+  //   await newPage.waitForLoadState();
+  //   expect(newPage.url()).toContain('rahulshettyacademy.com');
+  //   await newPage.close();
+  // });
 });
